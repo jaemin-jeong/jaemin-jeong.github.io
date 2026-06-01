@@ -4,33 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaemin-Jeong portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
-<div class="container">
+<div class="container terminal-window">
 
-    <aside class="sidebar">
-        <div class="profile">
-            <h1>정재민</h1>
-            <p class="role">Software Developer</p>
-
-            <div class="divider"></div>
-
-            <ul class="contact">
-                <li>Email: jaemin-jeong@naver.com</li>
-                <li>Blog: https://jaejade.tistory.com/</li>
-            </ul>
-        </div>
-    </aside>
-
-    <main class="content">
+    <main className="relative z-10 flex flex-1 w-full max-w-screen-xl mx-auto flex-col items-center justify-center py-16 px-6 md:px-16">
 
         <section class="section">
-            <h2>About</h2>
-            <p>
-                백엔드 및 풀스택 개발을 수행하고 있으며
-                시스템 설계, 아키텍처, 클라우드 환경 구축에 관심이 있습니다.
+            <h1>정재민</h1>
+            <p class="role">
+              <span class="terminal-text terminal-text-white">Software Developer</span>
             </p>
         </section>
 
@@ -38,16 +23,22 @@
             <h2>Tech Stack</h2>
 
             <div class="stack-list">
-                <span>Python</span>
-                <span>JavaScript</span>
-                <span>Node.js</span>
-                <span>Django</span>
-                <span>TypeScript</span>
-                <span>React</span>
-                <span>Docker</span>
-                <span>AWS</span>
-                <span>MySQL</span>
-                <span>Redis</span>
+              <div class="stack-category">
+                <div class="stack-category-title">Language</div>
+                <div>Python, JavaScript, TypeScript </div>
+              </div>
+              <div class="stack-category">
+                <div class="stack-category-title">Framework</div>
+                <div>Django, Django Ninja, Node.js, Express.js, FastAPI, React</div>
+              </div>
+              <div class="stack-category">
+                <div class="stack-category-title">Database</div>
+                <div>MySQL, Postgresql</div>
+              </div>
+              <div class="stack-category">
+                <div class="stack-category-title">Etc</div>
+                <div>Docker, Redis, Bigquery, AWS(ECS, EC2, RDS...), Looker Studio, Git</div>
+              </div>
             </div>
         </section>
 
@@ -56,18 +47,26 @@
 
             <div class="timeline">
                 <div class="timeline-item">
-                    <span class="year">2024 ~ Present</span>
+                    <span class="year">2023.09 - 2025.12</span>
                     <div>
-                        <strong>ABC Company</strong>
-                        <p>Backend Developer</p>
+                        <strong>(주)오케이포스</strong>
+                        <p>QR오더 백엔드 개발</p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <span class="year">2021 ~ 2024</span>
+                    <span class="year">2020.09 - 2022.12</span>
                     <div>
-                        <strong>XYZ Company</strong>
-                        <p>Full Stack Developer</p>
+                        <strong>(주)누벤트</strong>
+                        <p>앳트래커 백엔드 개발 / 백오피스 풀스택 개발</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="year">2018.08 - 2019.11</span>
+                    <div>
+                        <strong>엔아이티서비스(주)</strong>
+                        <p><span class="terminal-text terminal-text-white">Redis 기반 네이버 플랫폼(nBase-ARC) 운영</span></p>
                     </div>
                 </div>
             </div>
@@ -78,65 +77,61 @@
 
             <div class="project-grid">
 
-                <a href="https://example.com"
-                   target="_blank"
-                   class="project-card">
-
+                <a href="pages/qrOrder.html" class="project-card">
                     <div class="card-top">
-                        <h3>서비스 이름</h3>
+                        <h3>QR오더</h3>
                         <span class="external">↗</span>
                     </div>
-
                     <p>
-                        서비스 설명을 작성합니다.
+                        매장에서 손님들이 QR로 주문/결제할 수 있게 해주는 서비스입니다.
                     </p>
-
-                    <div class="tags">
-                        <span>Spring</span>
-                        <span>React</span>
-                    </div>
                 </a>
 
-                <a href="https://example.com"
-                   target="_blank"
-                   class="project-card">
-
+                <a href="pages/attracker.html" class="project-card">
                     <div class="card-top">
-                        <h3>관리 페이지</h3>
+                        <h3>앳트래커(Attracker)</h3>
                         <span class="external">↗</span>
                     </div>
-
                     <p>
-                        프로젝트 설명을 작성합니다.
+                        매장의 매출 분석 결과를 점주님들께 제공하는 서비스입니다.
                     </p>
-
-                    <div class="tags">
-                        <span>Vue</span>
-                        <span>Java</span>
-                    </div>
                 </a>
 
-                <a href="https://example.com"
+                <a href="https://jam.me.kr/"
                    target="_blank"
                    class="project-card">
 
                     <div class="card-top">
-                        <h3>개인 블로그</h3>
+                        <h3>개인 프로젝트</h3>
                         <span class="external">↗</span>
                     </div>
 
                     <p>
-                        기술 블로그 소개.
+                      현재 배포되어있는 개인 프로젝트 목록입니다. (AWS 인프라 비용으로 인해 평일 오전 8시부터 오후 9시 사이에만 접속 가능합니다.)
                     </p>
+                </a>
 
-                    <div class="tags">
-                        <span>Next.js</span>
+                <a href="https://jaejade.tistory.com"
+                   target="_blank"
+                   class="project-card">
+
+                    <div class="card-top">
+                        <h3>개인 기술 블로그</h3>
+                        <span class="external">↗</span>
                     </div>
+
+                    <p>https://jaejade.tistory.com</p>
                 </a>
 
             </div>
         </section>
 
+        <section class="section">
+          <h2>Contact</h2>
+          <ul class="contact">
+            <li>Email: jaemin-jeong@naver.com</li>
+          </ul>
+        </section>
     </main>
 
 </div>
