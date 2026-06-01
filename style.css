@@ -28,14 +28,14 @@ a {
 
 /* Sidebar */
 
-.sidebar {
+/* .sidebar {
     width: 320px;
     border-right: 1px solid #e5e5e5;
     padding: 60px 40px;
     position: sticky;
     top: 0;
     height: 100vh;
-}
+} */
 
 .profile h1 {
     font-size: 32px;
@@ -44,13 +44,13 @@ a {
 
 .role {
     margin-top: 10px;
-    color: #666;
+    color: #eeeeee;
 }
 
 .divider {
     margin: 30px 0;
     height: 1px;
-    background: #e5e5e5;
+    background: #777777;
 }
 
 .contact {
@@ -59,7 +59,11 @@ a {
 
 .contact li {
     margin-bottom: 12px;
-    color: #666;
+    color: #777777;
+}
+
+.contact a:hover {
+    color: #eeeeee;
 }
 
 /* Content */
@@ -82,22 +86,22 @@ a {
 }
 
 .section p {
-    color: #444;
+    color: #eeeeee;
 }
 
 /* Tech */
 
 .stack-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+    gap: 13px;
 }
 
-.stack-list span {
-    border: 1px solid #dcdcdc;
-    padding: 8px 14px;
-    border-radius: 30px;
-    font-size: 14px;
+.stack-category {
+  margin-top: 15px;
+  color: #eeeeee;
+}
+
+.stack-category-title {
+  font-weight: 600;
 }
 
 /* Career */
@@ -115,7 +119,7 @@ a {
 
 .year {
     min-width: 140px;
-    color: #666;
+    color: #eeeeee;
 }
 
 /* Projects */
@@ -127,7 +131,8 @@ a {
 }
 
 .project-card {
-    border: 1px solid #e5e5e5;
+    /* border: 1px solid #e5e5e5; */
+    border: 1px solid #777777;
     padding: 24px;
     border-radius: 16px;
 
@@ -135,8 +140,8 @@ a {
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
-    border-color: #111;
+    /* transform: translateY(-4px); */
+    border-color: #eeeeee;
 }
 
 .card-top {
@@ -156,7 +161,7 @@ a {
 }
 
 .project-card p {
-    color: #666;
+    color: #eeeeee;
     margin-bottom: 20px;
 }
 
@@ -168,7 +173,7 @@ a {
 
 .tags span {
     font-size: 12px;
-    color: #666;
+    color: #eeeeee;
     border: 1px solid #ddd;
     padding: 4px 10px;
     border-radius: 999px;
@@ -198,4 +203,32 @@ a {
         flex-direction: column;
         gap: 8px;
     }
+}
+
+/* 백그라운드 */
+.terminal-window {
+  /* 터미널 배경 및 크기 */
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  
+  /* 텍스트 스타일: 터미널 폰트 및 고정폭 설정 */
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  font-size: 16px;
+  color: #00ff00; /* 터미널 기본 글자색 (녹색) */
+  line-height: 1.5;
+}
+
+.terminal-text {
+  /* 타이핑 효과 (깜빡이는 커서) */
+  border-right: 2px solid #00ff00;
+  white-space: nowrap;
+  animation: blink-cursor 0.75s step-end infinite;
+}
+
+/* 커서 깜빡임 애니메이션 */
+@keyframes blink-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: #00ff00; }
 }
