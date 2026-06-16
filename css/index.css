@@ -27,6 +27,12 @@ a {
     font-size: 15px;
 }
 
+.error-text {
+    color: #ca0707;
+    font-weight: 600;
+    font-size: 15px;
+}
+
 .container {
     display: flex;
     gap: 30px;
