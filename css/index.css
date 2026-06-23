@@ -28,7 +28,7 @@ a {
 }
 
 .error-text {
-    color: #ca0707;
+    color: #d72727;
     font-weight: 600;
     font-size: 15px;
 }
@@ -320,6 +320,17 @@ html {
 }
 
 .project-link a:hover {
+    color: #00ff88;
+}
+
+.company-homepage-link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #eeeeee;
+    margin: 4px;
+}
+
+.company-homepage-link a:hover {
     color: #00ff88;
 }
 
