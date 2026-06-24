@@ -313,25 +313,34 @@ html {
     margin-bottom: 20px;
 }
 
-.project-link {
-    font-size: 15px;
-    font-weight: 400;
-    font-style: italic;
+.target-icon {
+    /* 텍스트보다 약간 작게 설정하여 자연스럽게 만듦 */
+    font-size: 0.85em;
+    /* 텍스트와 아이콘 사이 간격 */
+    margin-left: 4px;
+    /* 텍스트와 높이 맞추기 */
+    vertical-align: middle;
+    color: #b7b7b7;
 }
 
-.project-link a:hover {
-    color: #00ff88;
+.side-project-link {
+    transition: all 0.3s ease;
 }
 
-.company-homepage-link {
-    font-size: 14px;
-    font-weight: 400;
+.side-project-link:hover {
+    transform: translate(1px, -1px);
+    text-shadow: 0 0 1.5px #eeeeee
+}
+
+.company-link {
+    font-weight: bold;
     color: #eeeeee;
-    margin: 4px;
+    transition: all 0.3s ease;
 }
 
-.company-homepage-link a:hover {
-    color: #00ff88;
+.company-link:hover {
+    transform: translate(1px, -1px);
+    text-shadow: 0 0 1.5px #eeeeee
 }
 
 .image-container {
