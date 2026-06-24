@@ -40,6 +40,14 @@ a {
     padding: 20px;
 }
 
+hr {
+    border: 0;
+    /* 선 색상 및 두께 */
+    border-top: 0.5px solid #686868;
+    /* 위아래 여백 */
+    margin: 50px 0px 50px 0px;
+}
+
 /* Sidebar */
 
 .sidebar {
@@ -315,7 +323,7 @@ html {
 
 .target-icon {
     /* 텍스트보다 약간 작게 설정하여 자연스럽게 만듦 */
-    font-size: 0.85em;
+    font-size: 0.8em;
     /* 텍스트와 아이콘 사이 간격 */
     margin-left: 4px;
     /* 텍스트와 높이 맞추기 */
@@ -323,11 +331,11 @@ html {
     color: #b7b7b7;
 }
 
-.side-project-link {
+.page-open-link {
     transition: all 0.3s ease;
 }
 
-.side-project-link:hover {
+.page-open-link:hover {
     transform: translate(1px, -1px);
     text-shadow: 0 0 1.5px #eeeeee
 }

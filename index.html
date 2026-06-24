@@ -88,6 +88,17 @@
                         </ul>
                     </div>
 
+                    <div>
+                        <strong>Blog</strong>
+                        <ul class="profile-detail page-open-link">
+                            <a href="https://jaejade.tistory.com/" target="_blank" rel="noopener noreferrer">
+                                <li>
+                                    https://jaejade.tistory.com <i class="fa-solid fa-up-right-from-square target-icon"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+
                     <div class="profile-detail">
                         <strong>About Me</strong>
                         <p class="letter-space-s">
@@ -198,76 +209,81 @@
                             <h3 id="qr-order" class="project-category">QR 오더</h3>
                             <div>
                                 <!-- QR 오더 프로젝트 1 -->
-                                <div class="project-title">1. 네이버 스마트플레이스 리뷰 연동</div>
+                                <div class="project-title">1. 간편 리뷰 기능 개발</div>
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
-                                        <li>매장 방문 고객의 리뷰 작성 허들을 낮춰 리뷰 참여도 향상 및 QR 오더 서비스 경쟁력 강화</li>
+                                        <li>네이버 스마트플레이스 연동을 통해 리뷰 단계 간소화</li>
                                     </ul>
 
                                     <strong>역할</strong>
                                     <ul>
-                                        <li>리뷰 연동 시스템 백엔드 아키텍처 설계 및 API 개발 주도</li>
+                                        <li>백엔드 구조 설계, REST API 개발</li>
+                                        <li>네이버 스마트플레이스 API 연동</li>
                                     </ul>
 
                                     <strong>수행 내용</strong>
                                     <ul>
-                                        <li>리뷰 상태(작성 완료, 노출 여부 등) 추적 및 관리를 위한 모델(MySQL) 설계</li>
-                                        <li>리뷰 작성 및 상태 업데이트에 필요한 REST API 연동 및 개발</li>
-                                        <li>Celery 기반의 스케줄러를 구축하여, 리뷰 상태 데이터를 정기적으로 동기화하는 배치 프로세스 구현</li>
+                                        <li>리뷰 상태 추적을 위한 모델 설계</li>
+                                        <li>리뷰 작성, 상태 업데이트에 필요한 REST API 개발</li>
+                                        <li>Celery 기반의 스케줄러 구축, 리뷰 상태를 동기화하는 배치 프로세스 구현</li>
                                         <li>API 명세, 통신 플로우 등 기술 문서화를 통해 협업 효율 개선</li>
                                     </ul>
 
                                     <strong>성과</strong>
                                     <ul>
-                                        <li>영수증 인증 절차를 생략한 리뷰 작성 프로세스 구축으로 리뷰 작성 편의성 향상</li>
+                                        <li>리뷰 참여율 약 15% 상승</li>
+                                        <li>영수증 인증 없이 리뷰할 수 있어 편의성 향상</li>
                                         <li>기술 문서 제공으로 신규 팀원 온보딩 리소스 절감</li>
                                     </ul>
 
                                     <strong>기술 스택</strong>
                                     <ul>
-                                        <li>Python, Django, MySQL, Celery, AWS</li>
+                                        <li>Python, Django, MySQL, Celery, AWS, Confluence</li>
                                     </ul>
                                 </div>
+
+                                <hr/>
                                 
                                 <!-- QR 오더 프로젝트 2 -->
                                 <div class="project-title">2. 외부 POS 솔루션과 QR오더 연동</div>
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
-                                        <li>외부 POS 시스템과 QR오더 연동을 통해 대형 프랜차이즈 대상 QR 오더 도입률 확대</li>
+                                        <li>대형 프랜차이즈 대상으로 QR 오더 도입률 확대</li>
                                     </ul>
 
                                     <strong>역할</strong>
                                     <ul>
-                                        <li>외부 POS 파트너사와 기술 협업 및 통합 테스트 주도</li>
+                                        <li>외부 POS 파트너사와 협업, 개발 주도</li>
                                     </ul>
 
                                     <strong>수행 내용</strong>
                                     <ul>
-                                        <li>매장정보 관리 및 주문 관련 REST API 연동 및 개발</li>
-                                        <li>서비스 안정성 확보를 위해 Django test를 활용한 시나리오 테스트 및 회귀 테스트</li>
-                                        <li>외부 POS 개발팀의 QR오더 서비스 이해도를 높이기 위해 QA 시나리오 작성 및 제공, QA 지원</li>
+                                        <li>매장정보 관리 및 주문 관련 REST API 연동 개발</li>
+                                        <li>서비스 안정성 확보를 위해 Django test를 활용한 테스트코드 작성</li>
+                                        <li>외부 개발팀의 QR오더 서비스 이해도를 높이기 위해 QA 시나리오 작성, QA 지원</li>
                                     </ul>
 
                                     <strong>성과</strong>
                                     <ul>
-                                        <li>이삭토스트 약 800개 매장에 QR 오더 서비스 성공적 배포 및 운영 안정화</li>
+                                        <li>이삭토스트 약 800개 매장에 QR 오더 서비스 성공적 제공</li>
                                     </ul>
 
                                     <strong>기술 스택</strong>
                                     <ul>
-                                        <li>Python, Django, MySQL, AWS</li>
+                                        <li>Python, Django, MySQL, AWS, Confluence</li>
                                     </ul>
                                 </div>
-                                
 
+                                <hr/>
+                                
                                 <!-- QR 오더 프로젝트 3 -->
-                                <div class="project-title">3. 대전 한화이글스 홈구장 프로젝트</div>
+                                <div class="project-title">3. 대전 한화이글스 홈구장에 QR오더 제공</div>
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
-                                        <li>약 17,000명 규모 관중 환경에서도 안정적인 QR 오더 서비스 제공</li>
+                                        <li>약 17,000명 규모 관중 환경에서 안정적인 QR 오더 서비스 제공</li>
                                     </ul>
 
                                     <strong>역할</strong>
@@ -278,10 +294,11 @@
 
                                     <strong>수행 내용</strong>
                                     <ul>
-                                        <li>야구장 전용 매장 모델 및 REST API 개발</li>
-                                        <li>조회 빈도가 높은 데이터에 Redis 캐싱 전략을 도입하여 부하 경감 및 응답 속도 개선</li>
-                                        <li>k6 기반 부하 테스트 수행을 통해 시스템 병목 구간 식별 및 인프라 가용성 검증</li>
-                                        <li>CloudWatch 모니터링 및 트러블슈팅</li>
+                                        <li>야구장 전용 매장 모델 설계</li>
+                                        <li>신규 기능 REST API 개발</li>
+                                        <li>조회 빈도가 높은 데이터에 Redis 캐싱 전략을 도입, 부하 경감 및 응답 속도 개선</li>
+                                        <li>k6 기반 부하 테스트를 통해 시스템 병목 구간 식별, 인프라 가용성 검증</li>
+                                        <li>CloudWatch를 통한 모니터링</li>
                                     </ul>
 
                                     <strong>성과</strong>
@@ -294,34 +311,37 @@
                                         <li>Python, Django, MySQL, Redis, ElastiCache, AWS, k6</li>
                                     </ul>
                                 </div>     
+
+                                <hr/>
                                 
                                 <!-- QR 오더 프로젝트 4 -->
-                                <div class="project-title">4. 통합 관리시스템에 QR오더 매장 설정 기능 이관 & 정산 정보 등록 자동화</div>
+                                <div class="project-title">4. 통합 관리시스템과 QR오더 서비스 연동</div>
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
-                                        <li>QR오더 매장 설정 기능을 통합 매장 관리 시스템으로 이관하여 데이터 일관성 확보</li>
+                                        <li>QR오더 매장 설정 기능을 통합 관리시스템에 이관하여 데이터 일관성 확보</li>
                                         <li>정산 정보 등록 업무를 자동화하여 운영 효율화</li>
                                     </ul>
 
                                     <strong>역할</strong>
                                     <ul>
                                         <li>통합 시스템 연동에 필요한 API 개발 및 모델 설계</li>
+                                        <li>협업에 필요한 커뮤니케이션 주도</li>
                                     </ul>
 
                                     <strong>수행 내용</strong>
                                     <ul>
-                                        <li>통합 시스템과 QR오더의 연동에 필요한 REST API 개발 </li>
-                                        <li>대리점 및 다양한 계약 형태를 유연하게 지원하는 DB 모델 설계</li>
-                                        <li>외부 시스템 연동에 따른 매장 정보 변경 이력을 명확히 추적하기 위해 전용 이력 관리 테이블 설계</li>
+                                        <li>REST API 연동 및 개발</li>
+                                        <li>대리점 및 다양한 계약 형태를 지원하는 모델 설계</li>
+                                        <li>매장 정보 변경 이력 추적을 위한 전용 이력 관리 모델 설계</li>
                                         <li>결제 수단 미등록 등 장애 유발 요소를 파악하기 위해, Celery 기반 스케줄러로 Slack 알람 전송하는 데일리 리포트 시스템 구축</li>
                                         <li>다중 트랜잭션 상황에서 발생하는 동시성 문제 파악 및 버그 수정</li>
                                     </ul>
 
                                     <strong>성과</strong>
                                     <ul>
+                                        <li>매장 설정 기능을 대리점에 셀프 서비스 형태로 제공</li>
                                         <li>운영팀 수동 업무 절감</li>
-                                        <li>매장 설정을 대리점에 셀프 서비스 형태로 제공</li>
                                     </ul>
 
                                     <strong>기술 스택</strong>
@@ -330,12 +350,14 @@
                                     </ul>
                                 </div>    
 
+                                <hr/>
+
                                 <!-- QR 오더 프로젝트 5 -->
-                                <div class="project-title">5. 통계 지표 대시보드 구축 (BigQuery & Looker)</div>
+                                <div class="project-title">5. 통계 지표 대시보드 구축 (BigQuery & Looker Studio)</div>
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
-                                        <li>주문, 결제 등 핵심 지표를 가시화하여 데이터 기반의 의사결정 지원 체계 구축</li>
+                                        <li>주문, 결제 등 핵심 지표 가시화하여 영업팀에 제공</li>
                                     </ul>
 
                                     <strong>역할</strong>
@@ -352,8 +374,7 @@
 
                                     <strong>성과</strong>
                                     <ul>
-                                        <li>매장별 QR 오더 매출 점유율을 가시화하여 QR 오더 서비스 활용성 검증</li>
-                                        <li>객관적 지표에 기반한 즉각적인 마케팅 성과 측정 및 비즈니스 전략 수립 환경 마련</li>
+                                        <li>QR 오더 매출 점유율을 가시화하여 QR 오더 서비스 활용성 검증</li>
                                         <li>수동 데이터 추출 업무를 없애 개발팀의 리소스 절감</li>
                                     </ul>
 
@@ -363,8 +384,10 @@
                                     </ul>
                                 </div>    
 
+                                <hr/>
+
                                 <!-- QR 오더 프로젝트 6 -->
-                                <div class="project-title">6. QR 오더 주문 서비스 백엔드 개발</div>
+                                <div class="project-title">6. QR오더 주문 기능 개발</div>
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
@@ -373,8 +396,9 @@
 
                                     <strong>역할</strong>
                                     <ul>
-                                        <li>QR 오더 주문 데이터를 중계 서버로 전송하는 로직 개발</li>
+                                        <li>주문 데이터를 중계 서버로 전송하는 로직 개발</li>
                                         <li>멤버십 솔루션 연동 및 관련 모델 설계</li>
+                                        <li>부가세, 봉사료, 포인트 할인이 복합적으로 작용하는 결제 금액에 대한 정확성 확보</li>
                                     </ul>
 
                                     <strong>수행 내용</strong>
@@ -382,13 +406,13 @@
                                         <li>POS 연동 규격에 맞춰 부가세, 봉사료, 포인트 차감 등 다양한 케이스에 대한 계산 로직 구현</li>
                                         <li>멤버십 솔루션 연동을 통한 포인트 조회, 적립, 사용 기능 구현</li>
                                         <li>멤버십 적립/사용의 중복 방지를 위한 모델 설계</li>
-                                        <li>복잡한 주문 데이터를 파악하기 쉽게 TypeDict를 통해 클래스화함으로써 코드 가독성 향상</li>
-                                        <li>코드의 안정성과 신뢰성을 확보하기 위해 Django test를 통해 테스트 코드 작성</li>
+                                        <li>TypeDict를 통해 복잡한 주문 데이터 클래스화하여 코드 가독성 향상</li>
+                                        <li>코드 안정성을 확보하기 위해 Django test를 통해 테스트 코드 작성</li>
                                     </ul>
 
                                     <strong>성과</strong>
                                     <ul>
-                                        <li>QR 오더를 통한 주문 및 멤버십 기능 릴리즈 및 안정적 운영</li>
+                                        <li>QR 오더를 통한 주문 및 멤버십 기능 릴리즈</li>
                                     </ul>
 
                                     <strong>기술 스택</strong>
@@ -397,12 +421,14 @@
                                     </ul>
                                 </div>    
 
+                                <hr/>
+
                                 <!-- QR 오더 프로젝트 7 -->
-                                <div class="project-title">7. 데이터 전송 자동화 프로세스 구축 및 그룹사에 데이터 정기적 제공</div>
+                                <div class="project-title">7. 데이터 전송 자동화 프로세스 구축</div>
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
-                                        <li>수작업 없는 정기적인 데이터 수집/전송 프로세스 구현</li>
+                                        <li>수작업 없이 정기적으로 그룹사에 데이터 제공</li>
                                     </ul>
 
                                     <strong>역할</strong>
@@ -413,14 +439,14 @@
                                     <strong>수행 내용</strong>
                                     <ul>
                                         <li>AWS Lambda에서 가맹점 데이터(MySQL) 추출, 파일 변환 및 이메일 발송까지 수행하는 로직 개발</li>
-                                        <li>AWS EventBridge Scheduler를 통해 데이터 수집부터 리포트 전송까지의 전 과정을 정기 배치로 자동화</li>
-                                        <li>데이터 유실 방지 및 이력 관리를 위해 가공된 데이터를 AWS S3에 저장해 백업 체계 구축</li>
-                                        <li>배치 작업의 성공/실패 여부를 Slack 알림으로 연동하여 실시간 모니터링 환경 구현</li>
+                                        <li>데이터 유실 방지 및 이력 관리를 위해 AWS S3를 사용해 백업 체계 구축</li>
+                                        <li>AWS EventBridge Scheduler를 통해 정기 배치 처리</li>
+                                        <li>배치 작업 성공 여부를 Slack 알림으로 연동하여 실시간 모니터링 환경 구현</li>
                                     </ul>
 
                                     <strong>성과</strong>
                                     <ul>
-                                        <li>데이터 수집 및 전송 업무를 100% 자동화하고 그룹사에 가맹점 데이터 제공</li>
+                                        <li>데이터 수집 및 전송 업무 100% 자동화</li>
                                     </ul>
 
                                     <strong>기술 스택</strong>
@@ -441,7 +467,7 @@
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
-                                        <li>서비스 이용료 정산 및 세금계산서 발행 프로세스 전면 자동화</li>
+                                        <li>이용료 정산 및 세금계산서 발행 프로세스 전면 자동화</li>
                                     </ul>
 
                                     <strong>역할</strong>
@@ -452,16 +478,16 @@
 
                                     <strong>수행 내용</strong>
                                     <ul>
-                                        <li>서비스 이용료 계산 및 정산을 위한 정산 전용 DB 테이블 구조 설계 및 Stored Procedure 개발</li>
-                                        <li>MySQL Event Scheduler를 통해 매 정산 주기별 자동 결산 및 인보이스 데이터 생성</li>
-                                        <li>외부 API(팝빌, Mailchimp)를 연동하여 전자세금계산서 발행 및 인보이스 이메일 발송 자동화</li>
-                                        <li>React 기반의 백오피스 정산 관리 페이지를 개발하여 정산 내역 조회 및 수동 조정 기능 제공</li>
+                                        <li>정산 DB 테이블 설계 및 Stored Procedure 개발</li>
+                                        <li>MySQL Event Scheduler를 통해 정산 주기별 자동 결산 및 인보이스 데이터 생성</li>
+                                        <li>외부 API(팝빌, Mailchimp) 연동, 세금계산서 및 인보이스 이메일 발송 자동화</li>
+                                        <li>백오피스 정산 관리 페이지 개발, 정산 내역 조회/관리 기능 제공</li>
                                     </ul>
 
                                     <strong>성과</strong>
                                     <ul>
-                                        <li>정산 자동화를 통해 휴먼 에러에 의한 오계산 및 누락 위험 차단</li>
-                                        <li>수일이 소요되던 운영팀의 반복 업무를 완전 자동화하여 운영 리소스 절감</li>
+                                        <li>자동화를 통해 휴먼 에러에 의한 오계산 및 누락 위험 차단</li>
+                                        <li>수일이 소요되던 운영팀의 반복 업무를 없애 운영 리소스 절감</li>
                                     </ul>
 
                                     <strong>기술 스택</strong>
@@ -469,6 +495,8 @@
                                         <li>Node.js, Express.js, React, MySQL, AWS</li>
                                     </ul>
                                 </div>
+
+                                <hr/>
 
                                 <!-- 앳프래커 프로젝트 2 -->
                                 <div class="project-title">2. Redis 기반 대용량 데이터 조회 성능 최적화</div>
@@ -486,14 +514,14 @@
 
                                     <strong>수행 내용</strong>
                                     <ul>
-                                        <li>호출 빈도 높은 API에서 실행되는 쿼리 대상으로 로그 및 EXPLAIN 실행 계획을 분석해 캐시 적용 대상 선정</li>
+                                        <li>로그 및 EXPLAIN 실행 계획을 분석해 캐시 적용 대상 선정</li>
                                         <li>IDE, 로그, 개발자 도구를 통해 개선된 쿼리 및 캐시 성능 검증</li>
-                                        <li>배포 후 변경된 내용이 반영되지 않는 버그 해결</li>
+                                        <li>배포 후 변경된 내용이 반영되지 않는 이슈 해결</li>
                                     </ul>
 
                                     <strong>성과</strong>
                                     <ul>
-                                        <li>최대 12초 걸리던 로딩 속도를 1초 미만으로 약 90% 이상 단축하여 사용자 경험 개선</li>
+                                        <li>최대 12초 걸리던 로딩 속도를 1초 미만으로 약 90% 이상 단축</li>
                                     </ul>
 
                                     <strong>기술 스택</strong>
@@ -501,29 +529,32 @@
                                         <li>Node.js, Redis, MySQL, AWS</li>
                                     </ul>
                                 </div>
+
+                                <hr/>
+
                                 <!-- 앳프래커 프로젝트 3 -->
-                                 <div class="project-title">3. 업무용 메신저 기반 매출 지표 조회 봇 개발</div>
+                                 <div class="project-title">3. 메신저 기반 매출 지표 조회 봇 개발</div>
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
-                                        <li>업무용 메신저를 통해 매출 데이터를 실시간 조회할 수 있는 시스템 구축</li>
+                                        <li>업무용 메신저로 간단히 매출 조회할 수 있게 하는 기능을 고객사(카페 노티드)에 제공</li>
                                     </ul>
 
                                     <strong>역할</strong>
                                     <ul>
-                                        <li>메신저 인터페이스와 백엔드 API 연동 및 데이터 집계 로직 개발</li>
+                                        <li>매출 집계 로직 개발</li>
+                                        <li>메신저 인터페이스와 백엔드 API 연동</li>
                                     </ul>
 
                                     <strong>수행 내용</strong>
                                     <ul>
-                                        <li>업무용 메신저(Jandi)의 Webhook을 연동하여, 특정 명령어 기반의 데이터 호출 및 응답 체계 구축</li>
                                         <li>매장별, 지점별 매출 데이터를 실시간으로 집계하고 요약하여 메신저 포맷에 맞게 최적화하는 API 개발</li>
+                                        <li>업무용 메신저(Jandi) Webhook 연동</li>
                                     </ul>
 
                                     <strong>성과</strong>
                                     <ul>
-                                        <li>메신저를 통해 매출 분석 데이터를 실시간으로 확인함으로서 운영 효율성 향상</li>
-                                        <li>주요 고객사인 카페노티드에 기능 제공</li>
+                                        <li>메신저를 통해 매출 분석 데이터를 실시간으로 확인함으로서 편의성 향상</li>
                                     </ul>
 
                                     <strong>기술 스택</strong>
@@ -531,13 +562,15 @@
                                         <li>Node.js, Redis, MySQL, AWS</li>
                                     </ul>
                                 </div>
+
+                                <hr/>
 
                                 <!-- 앳프래커 프로젝트 4 -->
                                 <div class="project-title">4. 분석 데이터 이상치 감지 프로세스 구축</div>
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
-                                        <li>통계 및 분석 로직의 신뢰도를 저해하는 이상 데이터를 식별하여 데이터 무결성 확보</li>
+                                        <li>통계 및 분석 신뢰도를 저해하는 이상 데이터를 식별, 데이터 무결성 확보</li>
                                     </ul>
 
                                     <strong>역할</strong>
@@ -548,12 +581,13 @@
                                     <strong>수행 내용</strong>
                                     <ul>
                                         <li>비즈니스 도메인 규칙을 기반으로 주문 누락, 중복 결제, 비정상적 수치 등 이상치 탐지 기준 수립</li>
-                                        <li>대규모 분석 데이터 테이블을 스캔하여 이상 데이터를 식별하고 전용 관리 테이블로 수집하는 스케줄러 구현</li>
+                                        <li>수십만 건의 분석 데이터를 기준으로 이상 데이터 식별</li>
+                                        <li>이상 데이터를 전용 관리 테이블로 수집하는 스케줄러 구현</li>
                                     </ul>
 
                                     <strong>성과</strong>
                                     <ul>
-                                        <li>수집된 이상 데이터를 지속적으로 모니터링하여, 분석 로직에 반영되는 데이터의 오염도 최소화</li>
+                                        <li>이상 데이터 수집을 통해 분석 로직 개선에 필요한 정보 제공</li>
                                     </ul>
 
                                     <strong>기술 스택</strong>
@@ -562,29 +596,30 @@
                                     </ul>
                                 </div>
 
+                                <hr/>
+
                                 <!-- 앳프래커 프로젝트 5 -->
-                                <div class="project-title">5. DB 쿼리 최적화 및 인덱싱 튜닝을 통한 API 성능 개선</div>
+                                <div class="project-title">5. 슬로우 쿼리 개선, 인덱싱 튜닝을 통한 성능 향상</div>
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
-                                        <li>서비스 지연을 유발하는 슬로우 쿼리를 튜닝해 API 응답 성능 개선</li>
+                                        <li>서비스 지연을 유발하는 슬로우 쿼리를 튜닝해 API 응답 성능 향상</li>
                                     </ul>
 
                                     <strong>역할</strong>
                                     <ul>
-                                        <li>MySQL EXPLAIN 분석을 통해 인덱스 최적화 및 쿼리 개선</li>
+                                        <li>슬로우 쿼리 대상 튜닝, 인덱스 최적화</li>
                                     </ul>
 
                                     <strong>수행 내용</strong>
                                     <ul>
-                                        <li>로그를 통해 페이지 로딩 지연 유발 API 목록 추출, 실행 시간이 1,000ms를 초과하는 API와 Stored Procedure 조사</li>
-                                        <li>MySQL EXPLAIN 실행 계획 분석하여 인덱스 미적용 원인 판단</li>
-                                        <li>개선 전/후 응답 시간을 측정하여 성능 개선 효과 검증, 데이터 정합성 점검</li>
+                                        <li>실행 시간이 1,000ms를 초과하는 쿼리 대상으로 MySQL EXPLAIN 실행 계획을 통해 원인 분석</li>
+                                        <li>성능 개선 효과 검증, 데이터 정합성 점검</li>
                                     </ul>
 
                                     <strong>성과</strong>
                                     <ul>
-                                        <li>병목 쿼리의 실행 속도를 최적화하여 기존 대비 최대 4배 빠른 API 응답 속도 구현</li>
+                                        <li>쿼리 실행 속도를 최적화, 기존 대비 최대 4배 빠른 응답 속도 구현</li>
                                     </ul>
 
                                     <strong>기술 스택</strong>
@@ -592,31 +627,34 @@
                                         <li>MySQL</li>
                                     </ul>
                                 </div>
+
+                                <hr/>
 
                                 <!-- 앳프래커 프로젝트 6 -->
                                 <div class="project-title">6. 이메일 및 카카오 알림톡 통합 메시징 시스템 구축</div>
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
-                                        <li>사용자 행동 기반(회원가입 등)의 자동 알림 체계를 구축하여 고객 접점 강화</li>
+                                        <li>사용자 행동 기반의 알림 체계를 구축하여 고객 접점 강화</li>
                                     </ul>
 
                                     <strong>역할</strong>
                                     <ul>
-                                        <li>메시징 솔루션 연동 및 이벤트 기반의 발송 로직 개발 주도</li>
+                                        <li>메시징 솔루션 연동</li>
+                                        <li>회원가입 등의 이벤트 발생시 사용자에게 이메일/알림톡 발송 로직 개발</li>
                                     </ul>
 
                                     <strong>수행 내용</strong>
                                     <ul>
-                                        <li>외부 메시징 솔루션(Mailchimp, 카카오 알림톡) 연동을 통해 서비스 내 알림 자동화 시스템 구축</li>
-                                        <li>회원가입, 매장 정보 등록 완료 등 주요 사용자 행동 발생 시 실시간 발송을 처리하는 이벤트 핸들러 개발</li>
-                                        <li>React 기반의 백오피스 관리 화면을 개발하여 수신자 관리 및 발송 이력 모니터링 기능 구축</li>
+                                        <li>메시징 솔루션(Mailchimp, 카카오 알림톡) 연동</li>
+                                        <li>회원가입/매장정보 등록 등, 주요 이벤트 발생 시 사용자에게 알림 발송하는 로직 개발</li>
+                                        <li>백오피스 개발, 수신자 관리 및 발송 이력 모니터링 기능 제공</li>
                                     </ul>
 
                                     <strong>성과</strong>
                                     <ul>
-                                        <li>서비스 주요 시점별 자동 알림 프로세스 구축으로 사용자 서비스 몰입도 향상</li>
-                                        <li>백오피스 관리 기능 제공을 통해 운영팀의 수신자 관리 및 발송 결과 확인 업무 공수 절감</li>
+                                        <li>서비스 주요 시점별 자동 알림 프로세스 구축으로 사용자의 서비스 몰입도 향상</li>
+                                        <li>백오피스 기능을 통해 수신자 관리 및 발송 결과 확인 업무 공수 절감</li>
                                     </ul>
 
                                     <strong>기술 스택</strong>
@@ -625,12 +663,14 @@
                                     </ul>
                                 </div>
 
+                                <hr/>
+
                                 <!-- 7. 앳트래커 프로젝트7 -->
                                 <div class="project-title">7. ELK 기반 공공데이터 결합 및 비즈니스 대시보드 구축</div>
                                 <div class="project-description">
                                     <strong>목표</strong>
                                     <ul>
-                                        <li>내부 서비스 데이터와 외부 공공데이터(인구 통계 등)를 결합하여 다각도의 비즈니스 인사이트 제공</li>
+                                        <li>내부 데이터와 공공데이터를 결합해 다각도의 비즈니스 인사이트 제공</li>
                                     </ul>
 
                                     <strong>역할</strong>
@@ -640,15 +680,15 @@
 
                                     <strong>수행 내용</strong>
                                     <ul>
-                                        <li>AWS EC2 및 Docker 환경 내 ELK(Elasticsearch, Logstash, Kibana) 클러스터 구축</li>
+                                        <li>AWS EC2환경에서 ELK(Elasticsearch, Logstash, Kibana) docker 클러스터 구축</li>
                                         <li>비즈니스 지표에 필요한 공공데이터(서울시 자치구별 연령/성별 인구수 및 1인 가구 비중 등) 선정</li>
-                                        <li>Logstash를 통해 공공데이터를 수집하고 가공하여 Elasticsearch로 적재하는 파이프라인 구현</li>
-                                        <li>Kibana를 활용하여 내부 지표와 공공데이터를 매핑한 상권 분석 대시보드를 설계</li>
+                                        <li>Logstash를 통해 공공데이터 수집/가공, Elasticsearch에 적재하는 파이프라인 구축</li>
+                                        <li>Kibana를 통해 상권 분석 대시보드 구현</li>
                                     </ul>
 
                                     <strong>성과</strong>
                                     <ul>
-                                        <li>프랜차이즈 본사 및 가맹 점주 대상의 상권 맞춤형 메뉴 컨설팅을 위한 객관적 데이터 근거 마련</li>
+                                        <li>상권 맞춤형 메뉴 컨설팅을 위한 객관적 데이터 근거 마련</li>
                                     </ul>
 
                                     <strong>기술 스택</strong>
@@ -666,7 +706,7 @@
                     <div class="project-list">
                         <div class="project-items">
                             <div class="project-description">
-                                <div id="wide-learning-map" class="project-title side-project-link">
+                                <div id="wide-learning-map" class="project-title page-open-link">
                                     <a href="https://jam.me.kr/wide-learning-map/" target="_blank" rel="noopener noreferrer">
                                         Wide Learning Map <i class="fa-solid fa-up-right-from-square target-icon"></i>
                                     </a>
@@ -732,7 +772,7 @@
 
                         <div class="project-items">
                             <div class="project-description"> 
-                                <div id="gogo-lucky" class="side-project-link project-title">
+                                <div id="gogo-lucky" class="project-title page-open-link">
                                     <a href="https://jam.me.kr/gogo-lucky" target="_blank">
                                         Go Go Lucky <i class="fa-solid fa-up-right-from-square target-icon"></i>
                                     </a>
